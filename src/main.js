@@ -1,0 +1,19 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router/router'
+import store from './store/store'
+import './assets/style/base.css'
+import './assets/img/iconfont.js'
+
+//element
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+// 过滤器
+import './utils/filter'
+Vue.config.productionTip = false
+Vue.use(ElementUI)
+new Vue({
+  router,
+  store,
+  render: (h) => h(App),
+}).$mount('#app')
